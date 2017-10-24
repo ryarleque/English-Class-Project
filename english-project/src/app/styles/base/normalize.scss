@@ -98,6 +98,7 @@ a:focus,
 a:active,
 a:hover {
   outline: 0;
+  text-decoration: none;
 }
 
 /* Text-level semantics
@@ -184,6 +185,7 @@ sub {
 
 img {
   border: 0;
+  outline: 0;
 }
 
 /**
@@ -446,4 +448,10 @@ table {
 td,
 th {
   padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
 }

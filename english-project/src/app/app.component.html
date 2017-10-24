@@ -1,23 +1,26 @@
 <div>
-
-  <div class="header">    
+  <header class="header">    
     <img src="../assets/imagenes/logoBelatrix.png" alt="logoBelatrix" class="header__logo" routerLink="/home"> 
     <h2>English Belatrix System</h2>
-  </div>
+  </header>
   
   <div>
 
-    <div>
-      <ul>
-        <li>Operaciones</li>
-        <li><a routerLink="/programacion">Programación</a></li>
-        <li>Control de Asistencia</li>
-        <li>Cierre</li>
-        <li>Históricos</li>
+    <nav>
+      <ul class="menu" [@navBarAnimation]='state'>
+        <i class="fa fa-bars menu__bars" (click)="animateMe()"></i>
+        <li *ngIf="this.state =='expandable'">Operaciones</li>
+        <li *ngIf="this.state =='expandable'"><a routerLink="/programacion">Programación</a></li>
+        <li *ngIf="this.state =='expandable'">Control de Asistencia</li>
+        <li *ngIf="this.state =='expandable'">Cierre</li>
+        <li *ngIf="this.state =='expandable'">Históricos</li>
       </ul>
-    </div>
+    </nav>
 
     <router-outlet></router-outlet>
+
   </div>
+
+  <footer></footer>
 
 <div>
