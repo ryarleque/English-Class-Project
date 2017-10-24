@@ -3,7 +3,11 @@
 @import './app/styles/base/buttons.scss';
 @import './app/styles/base/normalize.scss';
 @import './app/styles/base/site.scss';
-@import './app/styles/base/variables.scss';
+
+
+//helpers
+@import './app/styles/helpers/mixins.scss';
+@import './app/styles/helpers/variables.scss';
 
 
 //vendor files

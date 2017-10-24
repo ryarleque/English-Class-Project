@@ -17,7 +17,7 @@ export const ROUTES: Routes = [
   declarations: [
     AppComponent,
     BienvenidaComponent,
-    ProgramacionComponent    
+    ProgramacionComponent   
   ],
   imports: [
     BrowserModule,
